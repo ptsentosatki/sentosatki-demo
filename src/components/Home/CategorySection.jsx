@@ -4,6 +4,7 @@ import bendera_korea_selatan from '../../assets/south-korea.png';
 import bendera_malaysia from '../../assets/malaysia.png';
 import bendera_singapura from '../../assets/singapore.png';
 import bendera_taiwan from '../../assets/taiwan.png';
+import bendera_uni_eropa from '../../assets/bendera_uni_eropa.png';
 
 const bendera_hongkong = new URL('../../assets/hong-kong.png', import.meta.url)
   .href;
@@ -33,6 +34,10 @@ const locations = [
     name: 'Hongkong',
     image: bendera_hongkong,
   },
+  {
+    name: 'Eropa',
+    image: bendera_uni_eropa,
+  },
 ];
 
 const CategorySection = () => {
@@ -59,7 +64,7 @@ const CategorySection = () => {
                 <img
                   src={country.image}
                   alt={country.name}
-                  className="w-16 mb-2"
+                  className="w-16 mb-2 rounded-md"
                 />
                 <h6 className="mb-3 text-gray-700 text-xl">{country.name}</h6>
               </Link>

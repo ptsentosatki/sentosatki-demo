@@ -13,7 +13,7 @@ import image4 from '../../assets/analythic-chart.jpg';
 const backgroundData = [
   {
     image: image1,
-    title: 'Agen Tenaga Kerja Terbaik untuk Karir Internasional Kamu',
+    title: 'Perusahaan Penempatan Pekerja Migran Indonesia (P3MI) terbaik untuk Karir Internasional Kamu',
     description: 'Kami membantu Kamu membuka Peluang Kerja ke Berbagai Negara',
   },
   {
