@@ -1,0 +1,155 @@
+body {
+  font-family: 'Twemoji Country Flags', 'Helvetica', 'Comic Sans', serif;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Atur appearance untuk perangkat iOS dan Android */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Pastikan tinggi yang responsif untuk perangkat mobile */
+input[type="date"] {
+  height: auto;
+  padding: 8px; /* Tambahkan padding jika diperlukan */
+  font-size: 16px; /* Pastikan ukuran font cukup besar untuk perangkat mobile */
+  line-height: 1.2;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Atur placeholder color untuk lebih baik pada mobile */
+input[type="date"]::-webkit-input-placeholder {
+  color: #999;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* Fokus dengan warna biru */
+}
+
+/* Tambahkan reset untuk input tanggal di iOS */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  color: transparent;
+  background: transparent;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  -webkit-filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in-down {
+  animation: slideInDown 0.5s ease-out forwards;
+}
+
+.animate-slide-out-up {
+  animation: slideOutUp 0.5s ease-in forwards;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.blur-lg {
+  backdrop-filter: blur(10px);
+}
+
+.custom-height-1 {
+  height: 12rem; /* 48 */
+}
+.custom-height-2 {
+  height: 16rem; /* 64 */
+}
+.custom-height-3 {
+  height: 20rem; /* 80 */
+}
+
+.news-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.news-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.news-content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.news-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.news-content h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.news-content h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.news-content blockquote {
+  border-left: 4px solid #ddd;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  color: #555;
+}
