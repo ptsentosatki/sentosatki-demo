@@ -98,7 +98,7 @@ const LatestNews = () => {
                   </div>
                   <div className="relative mt-8 flex items-center gap-x-4">
                     <img
-                      src={post.author_image_url}
+                      src={`${apiDatabaseUrl}/api/${post.author_image_url}`}
                       alt=""
                       className="h-10 w-10 rounded-full bg-gray-50"
                     />
